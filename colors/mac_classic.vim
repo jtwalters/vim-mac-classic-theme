@@ -49,7 +49,7 @@ hi CursorLine  guibg=#F0F6FF ctermbg=15
 hi CursorColumn  guibg=#F0F6FF ctermbg=15
 hi LineNr  guifg=#808080 ctermfg=244 guibg=#EFEFEF ctermbg=7
 hi VertSplit  guifg=#FFFFFF ctermfg=15 guibg=#CFCFCF ctermbg=252 gui=NONE
-hi MatchParen  guifg=#1E39F6 ctermfg=27 guibg=NONE gui=bold
+hi MatchParen  guifg=#1E39F6 ctermfg=27 guibg=#DDDDDD gui=bold
 hi Pmenu guibg=#EFEFEF ctermbg=7
 hi PmenuSel  guibg=#C6DEFF ctermbg=189
 hi Directory  guifg=#D51015 ctermfg=160 gui=bold
@@ -94,15 +94,11 @@ hi NonText  guifg=#DFDFDF ctermfg=253 guibg=#FFFFFF ctermbg=15
 hi SpecialKey  guifg=#DFDFDF ctermfg=253 guibg=#FFFFFF ctermbg=15
 
 " Diff styles {{{1
-hi diffAdded guifg=#007B22 guibg=#FFFFFF ctermfg=28 ctermbg=15
-hi diffRemoved guifg=#D51015 guibg=#FFFFFF ctermfg=160 ctermbg=15
-hi diffFile guifg=#6E79F1 guibg=#FFFFFF ctermfg=69 ctermbg=15
-hi diffNewFile guifg=#6E79F1 guibg=#FFFFFF ctermfg=69 ctermbg=15
-hi diffLine guifg=#000000 guibg=#FFFFFF ctermfg=0 ctermbg=15
+hi DiffText     gui=BOLD guifg=#FF0000 guibg=#FFEAE0
+hi DiffChange   gui=BOLD guifg=#303030 guibg=#FFFFFF
+hi DiffDelete   gui=NONE guifg=#FFFFFF guibg=#FF0000
+hi DiffAdd      gui=NONE guifg=#008000 guibg=#00FF00
 
-hi diffAdd guifg=#007B22 guibg=#FFFFFF ctermfg=28 ctermbg=15
-hi diffChange guifg=#007B22 guibg=#FFFFFF ctermfg=28 ctermbg=15
-hi diffText guifg=#007B22 guibg=#FFFFFF ctermfg=28 ctermbg=15
 hi link diffDelete diffRemoved
 " Git styles {{{1
 hi gitcommitFirstLine guifg=#000000 guibg=#FFFFFF ctermfg=0 ctermbg=15
