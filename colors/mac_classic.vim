@@ -45,8 +45,8 @@ let g:colors_name = "mac_classic"
 " GUI: {{{1
 hi Cursor  guifg=#FFFFFF ctermfg=15 guibg=#3C4C72 ctermbg=240
 hi Visual  guibg=#C6DEFF ctermbg=189
-hi CursorLine  guibg=#F0F6FF ctermbg=15
-hi CursorColumn  guibg=#F0F6FF ctermbg=15
+hi CursorLine  guibg=#FFF6DB ctermbg=15
+hi CursorColumn  guibg=#FFF6DB ctermbg=15
 hi LineNr  guifg=#808080 ctermfg=244 guibg=#EFEFEF ctermbg=7
 hi VertSplit  guifg=#FFFFFF ctermfg=15 guibg=#CFCFCF ctermbg=252 gui=NONE
 hi MatchParen  guifg=#1E39F6 ctermfg=27 guibg=#DDDDDD gui=bold
@@ -90,16 +90,18 @@ hi Todo  guifg=#0066FF ctermfg=27 gui=inverse,bold,italic
 hi Underlined  gui=underline
 
 " Invisible character colors
-hi NonText  guifg=#DFDFDF ctermfg=253 guibg=#FFFFFF ctermbg=15
-hi SpecialKey  guifg=#DFDFDF ctermfg=253 guibg=#FFFFFF ctermbg=15
+hi NonText  guifg=#BBBBBB ctermfg=253 guibg=#F4F4F4 ctermbg=15
+hi SpecialKey  guifg=#CFCFCF ctermfg=253 guibg=#FFFFFF ctermbg=15
 
 " Diff styles {{{1
-hi DiffText     gui=BOLD guifg=#FF0000 guibg=#FFEAE0
-hi DiffChange   gui=BOLD guifg=#303030 guibg=#FFFFFF
-hi DiffDelete   gui=NONE guifg=#FFFFFF guibg=#FF0000
-hi DiffAdd      gui=NONE guifg=#008000 guibg=#00FF00
+hi diffText     gui=BOLD guifg=#000000 guibg=#B89CF0
+hi diffChange   gui=BOLD guifg=#303030 guibg=#FFFFFF
+hi diffDelete   gui=NONE guifg=#FFFFFF guibg=#FF0000
+hi diffAdd      gui=NONE guifg=#004000 guibg=#00FF00
+hi diffLine guifg=#000000 guibg=#e1c5ff ctermfg=0 ctermbg=15
 
-hi link diffDelete diffRemoved
+hi link diffAdded diffAdd
+hi link diffRemoved diffDelete
 " Git styles {{{1
 hi gitcommitFirstLine guifg=#000000 guibg=#FFFFFF ctermfg=0 ctermbg=15
 hi gitcommitSelectedType guifg=#007B22 guibg=#FFFFFF ctermfg=28 ctermbg=15
